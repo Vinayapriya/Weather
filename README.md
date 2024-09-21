@@ -71,8 +71,7 @@ This is a simple weather app that fetches weather information using the OpenWeat
    -Chance of rain
 2.**Gemini Response**: The app will generate a natural language weather description using the Gemini API.
 
-3.**Saving Data**: The weather data and Gemini response are saved in JSON Lines format, stored in files named after the location (e.g., 
-  New_York_weather.jsonl and New_York_gemini_response.jsonl).
+
 
 ## Demo
  [streamlit-app-2024-09-21-22-09-30.webm](https://github.com/user-attachments/assets/69aff1dd-6c4b-46c9-a818-05761f8f9733)
