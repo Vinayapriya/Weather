@@ -1,7 +1,7 @@
 import os
 import requests
 import streamlit as st
-import google.generativeai as genai
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 import pathway as pw
 import json
@@ -10,18 +10,10 @@ import json
 load_dotenv()
 
 openweather_api_key = os.getenv("OPENWEATHER_API_KEY")
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+gemini_api_key = os.getenv("GOOGLE_API_KEY")
 
 
-genai.configure(api_key=gemini_api_key)
-
-generation_config = {
-    "temperature": 1,
-    "top_p": 0.95,
-    "top_k": 64,
-    "max_output_tokens": 8192,
-    "response_mime_type": "text/plain",
-}
+model = ChatGoogleGenerativeAI(model="gemini-pro", gemini_api_key=gemini_api_key)
 
 def get_weather_openweather(location):
     try:
@@ -43,9 +35,9 @@ def get_weather_gemini(location, temp_celsius, temp_fahrenheit, chance_of_rain):
     try:
         prompt = f"The current weather in {location} is clear. The temperature is {temp_fahrenheit:.1f} degrees Fahrenheit ({temp_celsius:.1f} degrees Celsius). There is a {chance_of_rain}% chance of rain today."
         
-        model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
-            generation_config=generation_config
+        model = ChatGoogleGenerativeAI(
+            model_name="gemini-pro",
+            gemini_api_key=gemini_api_key
         )
 
         chat_session = model.start_chat(history=[])
