@@ -72,7 +72,7 @@ Create a `.env` file in the root of your project and add your API keys:
 3.**Saving Data**: The weather data and Gemini response are saved in JSON Lines format, stored in files named after the location (e.g., New_York_weather.jsonl and New_York_gemini_response.jsonl).
 
 ##Demo
- [streamlit-app-2024-09-21-22-09-30](https://github.com/user-attachments/assets/69aff1dd-6c4b-46c9-a818-05761f8f9733)
+ [streamlit-app-2024-09-21-22-09-30.webm](https://github.com/user-attachments/assets/69aff1dd-6c4b-46c9-a818-05761f8f9733)
 
  ##License
  This project is licensed under the MIT License. See the LICENSE file for details.
