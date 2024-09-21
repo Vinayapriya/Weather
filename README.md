@@ -1,7 +1,6 @@
 ﻿# Weather App with OpenWeather, Gemini, and Pathway Integration
 
-This is a simple weather app that fetches weather information using the OpenWeather API and provides a response using the Gemini API. The data is saved in JSON Lines format using the Pathway library.
-
+This is a simple weather app that fetches weather information using the OpenWeather API and provides a response using the Gemini API. 
 ## Features
 
 - Fetches current weather data for a given location using OpenWeather API.
