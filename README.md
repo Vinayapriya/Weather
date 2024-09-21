@@ -74,10 +74,10 @@ This is a simple weather app that fetches weather information using the OpenWeat
 
 
 ## Demo
- [streamlit-app-2024-09-21-22-09-30.webm](https://github.com/user-attachments/assets/69aff1dd-6c4b-46c9-a818-05761f8f9733)
+[streamlit-app-2024-09-21-22-09-30.webm](https://github.com/user-attachments/assets/c3a2426b-3bc9-40b7-8875-5de57df712d7)
 
- ## License
- This project is licensed under the MIT License. See the LICENSE file for details.
+## License
+   This project is licensed under the MIT License. See the LICENSE file for details.
 
 
 
